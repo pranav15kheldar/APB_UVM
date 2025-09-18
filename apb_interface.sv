@@ -9,6 +9,4 @@ interface apb_if(clk,rst);
    logic PSEL;
    logic PENABLE;
    logic PSLVERR;
-
-
 endinterface

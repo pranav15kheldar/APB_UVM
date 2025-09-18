@@ -26,6 +26,5 @@ class apb_seq_read extends apb_base_seq;
             `uvm_info("Five","Out of the Start seq",UVM_NONE)
             end
     endtask
-
 endclass
 
