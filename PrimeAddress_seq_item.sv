@@ -10,7 +10,7 @@ class prime_seq_item extends apb_seq_item;
 
      constraint prime_address_c
      {
-        //  THis is constrint  to check weather address is inside queue
+        //  THis is constrint  to check weather address is inside queue.
         PWRITE == 1;
         foreach(PADDR[i])
         {
