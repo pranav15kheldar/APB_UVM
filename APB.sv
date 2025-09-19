@@ -50,17 +50,17 @@ module APB;
   end */
 
   // ************ Task to calculate Frequency ************ //
-  task cal_freq(input clk);
+  task cal_freq();
     @(posedge clk);
-    t1 <= $time;
+    t1 = $time;
     @(posedge clk);
-    t2 <= $time;
-    feq = (1/(t2-t1)) * 1000 ;
-    $display("Frequency : %p" , feq);
+    t2 = $time;
+    feq = (1.0/(t2-t1)) * 1000.0 ;
+    $display("Frequency : %f" , feq);
   endtask
 
   initial begin
-    cal_freq(clk);
+    cal_freq();
   end
   initial begin
     //inf.PREADY=1'b1;
